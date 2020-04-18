@@ -1,0 +1,6 @@
+#!/bin/sh
+
+bdir="$HOME/Library/Script Libraries"
+echo "$bdir"
+[ -d "$bdir" ] || mkdir -v "$bdir"
+osacompile -o "${bdir}/templateHelper.scptd" templateHelper.applescript
